@@ -1,4 +1,4 @@
-fn solution(s: &str) -> String {
+pub fn solution(s: &str) -> String {
     s.chars()
         .map(|x| match x {
             i if i.is_ascii_uppercase() => format!(" {}", x),

@@ -1,4 +1,4 @@
-fn to_camel_case(text: &str) -> String {
+pub fn to_camel_case(text: &str) -> String {
     let mut is_first_passed = false;
 
     let tab: Vec<String> = text

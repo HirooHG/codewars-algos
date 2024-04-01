@@ -1,4 +1,4 @@
-fn loop_finding(s: &str) -> (i32, &str) {
+pub fn loop_finding(s: &str) -> (i32, &str) {
     if s.len() >= 2 {
         let tab: Vec<&str> = s.split("").filter(|x| !x.is_empty()).collect();
         let first = tab.first().unwrap();
@@ -16,7 +16,7 @@ fn loop_finding(s: &str) -> (i32, &str) {
     }
 }
 
-fn test_loop() {
+pub fn test_loop() {
     let mut nb = 0;
     let mut a = loop_finding("())(()))");
 
@@ -36,7 +36,7 @@ fn test_loop() {
     println!("nb: {} str: {}", nb, a.1);
 }
 
-fn find_longest(s: &str) -> (i32, i32) {
+pub fn find_longest(s: &str) -> (i32, i32) {
     // u32
     // end of sub
     let mut layers: i32 = 0;
@@ -60,7 +60,7 @@ fn find_longest(s: &str) -> (i32, i32) {
     (layers, loops * 2)
 }
 
-fn test() {
+pub fn test() {
     let res_1 = find_longest("()");
     let res_2 = find_longest(")()");
     let res_3 = find_longest("()()");

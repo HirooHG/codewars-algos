@@ -1,4 +1,4 @@
-fn spin_words(input: &str) -> String {
+pub fn spin_words(input: &str) -> String {
     let mut new_tab: Vec<String> = Vec::new();
 
     let binding = input.to_string();
@@ -16,7 +16,7 @@ fn spin_words(input: &str) -> String {
     new_tab.join(" ")
 }
 
-fn spin_word(word: &str) -> String {
+pub fn spin_word(word: &str) -> String {
     let mut tab: Vec<&str> = word.split("").collect();
     tab.reverse();
     tab.join("")

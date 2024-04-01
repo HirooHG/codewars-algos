@@ -1,4 +1,4 @@
-fn tree_by_levels(root: &Node) -> Vec<u32> {
+pub fn tree_by_levels(root: &Node) -> Vec<u32> {
     let mut res = Vec::new();
     let mut q = Vec::new();
     q.push(root);

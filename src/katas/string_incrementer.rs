@@ -1,4 +1,4 @@
-fn increment_string(s: &str) -> String {
+pub fn increment_string(s: &str) -> String {
     if s.is_empty() {
         return "1".to_string();
     }

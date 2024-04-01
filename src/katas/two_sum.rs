@@ -1,4 +1,4 @@
-fn two_sum(numbers: &[i32], target: i32) -> (usize, usize) {
+pub fn two_sum(numbers: &[i32], target: i32) -> (usize, usize) {
     let mut z: (usize, usize) = (0, 0);
 
     numbers.iter().enumerate().for_each(|(i, x)| {

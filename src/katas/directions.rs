@@ -1,12 +1,12 @@
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
-enum Direction {
+pub enum Direction {
     North,
     East,
     West,
     South,
 }
 
-fn dir_reduc(arr: &[Direction]) -> Vec<Direction> {
+pub fn dir_reduc(arr: &[Direction]) -> Vec<Direction> {
     let mut z: Vec<Direction> = arr.to_vec();
     for i in 0..arr.len() {
         let a = arr[i];
@@ -22,7 +22,7 @@ fn dir_reduc(arr: &[Direction]) -> Vec<Direction> {
     z
 }
 
-fn get_inv(dir: &Direction) -> Direction {
+pub fn get_inv(dir: &Direction) -> Direction {
     match dir {
         Direction::South => Direction::North,
         Direction::North => Direction::South,

@@ -1,4 +1,4 @@
-fn alphanumeric(password: &str) -> bool {
+pub fn alphanumeric(password: &str) -> bool {
     !password.is_empty() && !password.chars().any(|x| !x.is_ascii_alphanumeric())
 }
 

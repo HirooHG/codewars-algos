@@ -1,4 +1,4 @@
-fn max_sum(tree: Option<&TreeNode>) -> i32 {
+pub fn max_sum(tree: Option<&TreeNode>) -> i32 {
     match tree {
         Some(n) => {
             let mut sum = n.value;

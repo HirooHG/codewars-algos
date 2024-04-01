@@ -1,6 +1,4 @@
-use std::usize;
-
-fn find_odd(arr: &[i32]) -> i32 {
+pub fn find_odd(arr: &[i32]) -> i32 {
     let mut a: Vec<(&i32, usize)> = arr
         .iter()
         .map(|x| {

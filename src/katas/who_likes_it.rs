@@ -1,4 +1,4 @@
-fn likes(names: &[&str]) -> String {
+pub fn likes(names: &[&str]) -> String {
     match names.len() {
         1 => format!("{} likes this", names.first().unwrap()),
         2 => format!(

@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-fn count(input: &str) -> HashMap<char, i32> {
+pub fn count(input: &str) -> HashMap<char, i32> {
     let mut map: HashMap<char, i32> = HashMap::new();
     input.chars().for_each(|x| {
         if let Some(y) = map.get_mut(&x) {
