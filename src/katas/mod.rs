@@ -4,6 +4,7 @@ pub mod alphanumeric;
 pub mod brackets;
 pub mod break_camelcase;
 pub mod camel_case;
+pub mod ceasar;
 pub mod directions;
 pub mod odd_int;
 pub mod spin_words;
